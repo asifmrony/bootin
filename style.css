@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Muli&display=swap');
+
+:root {
+    --primary-font : 'Muli', sans-serif;
+    --Secondary-font: 'Merriweather', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Merriweather', sans-serif;
+}
+
+p {
+    font-family: 'Muli', sans-serif;
+}
+
+.header {
+    padding: 2.7rem 0;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.navbar-brand:hover {
+    cursor: pointer;
+}
+
+
+.nav-link {
+    margin-right: 1rem;
+}
+
+.navbar-right {
+    float:right
+}
+
+@media (max-width: 991px) {
+    #brand {
+        max-width: 100%;
+        /* margin-left: 18rem ; */
+        text-align: center !important;
+        /* padding-bottom: 2rem 0 !important; */
+        display: block;
+        margin-bottom: 1rem;
+    }
+    .navbar-brand:hover {
+        cursor: pointer;
+    }
+    
+}
+
