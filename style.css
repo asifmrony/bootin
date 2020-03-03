@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather|Muli&display=swap');
 
+/*=================================
+Global styles
+===================================*/
 :root {
     --primary-font : 'Muli', sans-serif;
     --Secondary-font: 'Merriweather', sans-serif;
@@ -15,6 +18,7 @@ body{
 
 .nav-container {
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -26,9 +30,15 @@ p {
     font-family: 'Muli', sans-serif;
 }
 
+/*=================================
+Header and Navbar styles start
+===================================*/
+
 .header {
     padding: 2.7rem 0;
 }
+
+/*-------Navbar Brand style-------*/
 
 .navbar-brand {
     font-size: 2rem;
@@ -39,13 +49,85 @@ p {
     cursor: pointer;
 }
 
+/*-------ALL Navbar links global style-------*/
 
-.nav-link {
-    margin-right: 1rem;
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
 }
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    height: 50%;
+    /* line-height: 50px; */
+    padding: 0 0.7rem;
+    /* display: block; */
+    color: #000;
+}
+
+nav ul li a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+/*-----------Navbar Middle Sections style------------*/
+
+.nav-middle-link {
+    padding: 0 1rem;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    font-weight: 500;
+}
+
+.nav-middle-link i {
+    margin-left: 0.3rem;
+}
+
+/*-----------Navbar Toggle style------------*/
+.toggle-menu {
+   
+}
+
+.menu-style {
+    text-transform: uppercase;
+    padding: 0.4rem 0;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+}
+
+/*-----------Navbar Right-cart Section style------------*/
 
 .navbar-right {
     float:right
+}
+
+.nav-cart-link {
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+    border-right: 1px solid rgb(218, 218, 218);
+    color: rgb(136, 136, 136);
+    font-weight: lighter;
+    position: relative;
+}
+
+.badge-custom {
+    position: absolute;
+    bottom: .63rem;
+    right: .5rem;
+    border-radius: .5rem;
+}
+
+.second, .third {
+    padding-right: 1.4rem;
+}
+
+.last {
+    border-right: none;
 }
 
 @media (max-width: 991px) {
