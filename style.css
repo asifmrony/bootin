@@ -4,11 +4,11 @@
 Global styles
 ===================================*/
 :root {
-    --primary-font : 'Muli', sans-serif;
+    --primary-font: 'Muli', sans-serif;
     --Secondary-font: 'Merriweather', sans-serif;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: 'Muli', sans-serif;
@@ -22,7 +22,12 @@ body{
     margin: 0 auto;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Merriweather', sans-serif;
 }
 
@@ -75,8 +80,10 @@ nav ul li a:hover {
     color: red;
     text-decoration: none;
 }
+
 /*-----------style Specificly for Large Devices------------*/
-.hide-desktop, .toggle-menu {
+.hide-desktop,
+.toggle-menu {
     display: none;
 }
 
@@ -89,7 +96,7 @@ nav ul li a:hover {
     font-weight: 500;
 }
 
-.nav-middle-link i {
+.nav-middle-item i {
     margin-left: 0.4rem;
 }
 
@@ -99,12 +106,13 @@ nav ul li a:hover {
     padding: 0.4rem 0;
     border-top: 1px solid red;
     border-bottom: 1px solid red;
+    cursor: pointer;
 }
 
 /*-----------Navbar Right-cart Section style------------*/
 
 .navbar-right {
-    float:right
+    float: right
 }
 
 .nav-cart-link {
@@ -124,7 +132,8 @@ nav ul li a:hover {
     border-radius: .5rem;
 }
 
-.second, .third {
+.second,
+.third {
     padding-right: 1.4rem;
 }
 
@@ -141,6 +150,7 @@ nav ul li a:hover {
         display: block;
         margin-bottom: 3rem;
     }
+
     .navbar-brand:hover {
         cursor: pointer;
     }
@@ -153,12 +163,14 @@ nav ul li a:hover {
     .header-middle {
         /* display: none; */
         position: absolute;
-        top: 0px;
-        left: 0px;
-        width: 30vw;
+        top: -123px;
+        left: -15px;
+        width: 50vw;
         height: 100vh;
-        background: #aaa;
+        background: rgb(253, 253, 253);
         transition: 0.5s;
+        z-index: 5;
+        overflow-x: hidden;
     }
 
     .navbar-middle {
@@ -168,7 +180,28 @@ nav ul li a:hover {
 
     .hide-desktop {
         display: block;
+        padding: 1rem 0.8rem;
+        background-color: red;
+        text-align: right;
     }
-    
-}
 
+    .cross {
+        color: #fff;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .nav-middle-item {
+        padding: 1rem 1rem;
+        border-bottom: 1px solid rgb(219, 218, 218);
+    }
+
+    .nav-middle-link {
+        color: rgb(90, 89, 89);
+    }
+
+    .nav-middle-item i {
+        float: right;
+    }
+
+}

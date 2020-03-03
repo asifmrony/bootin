@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-    <link rel="stylesheet" href="/resources/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="/resources/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/resources/OwlCarousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/resources/OwlCarousel/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/script.js">
 </head>
 
 <body>
@@ -25,13 +26,13 @@
 
                 <div class="col-lg-7 col-md-6 col-sm-4 col-3 justify-content-center mx-auto text-center">
                     <!-- Collapsable responsive Button -->
-                    <div class="toggle-menu"><span class="menu-style">Menu</span></div>
+                    <div class="toggle-menu"><span class="menu-style" onclick="openSlideMenu()">Menu</span></div>
 
                     <!-- <div class="collapse navbar-collapse"></div> -->
-                    <div class="header-middle" id="">
+                    <div class="header-middle" id="mobileSideMenu">
                         <ul class="navbar-middle" id="navbar-middle">
                             <li class="hide-desktop">
-                                <i class="far fa-times-circle"></i>
+                                <i class="far fa-times-circle cross" onclick="closeSlideMenu()"></i>
                             </li>
                             <li class="nav-middle-item active">
                                 <a href="#" class="nav-middle-link">HOME<i class="fas fa-caret-down"></i></a>
@@ -63,10 +64,12 @@
                                 <a href="#" class="nav-cart-link"><i class="fas fa-search"></i></a>
                             </li>
                             <li class="nav-cart-item">
-                                <a href="#" class="nav-cart-link second"><i class="far fa-heart"><span class="badge badge-danger badge-custom">0</span></i></a>
+                                <a href="#" class="nav-cart-link second"><i class="far fa-heart"><span
+                                            class="badge badge-danger badge-custom">0</span></i></a>
                             </li>
                             <li class="nav-cart-item">
-                                <a href="#" class="nav-cart-link third"><i class="fas fa-shopping-bag"><span class="badge badge-danger badge-custom">0</span></i></a>
+                                <a href="#" class="nav-cart-link third"><i class="fas fa-shopping-bag"><span
+                                            class="badge badge-danger badge-custom">0</span></i></a>
                             </li>
                             <li class="nav-cart-item">
                                 <a href="#" class="nav-cart-link last"><i class="fas fa-id-badge"></i></a>
@@ -122,8 +125,8 @@
         </div>
     </main>
 
-    <script src="/resources/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
-    <script src="/resources/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+    <script src="/resources/OwlCarousel/js/jquery.min.js"></script>
+    <script src="/resources/OwlCarousel/js/owl.carousel.js"></script>
     <script type="text/javascript">
         $('.owl-carousel').owlCarousel({
             loop: true,
@@ -141,6 +144,14 @@
                 }
             }
         })
+
+        function openSlideMenu() {
+            document.getElementById('mobileSideMenu').style.width = '50vw';
+        }
+
+        function closeSlideMenu() {
+            document.getElementById('mobileSideMenu').style.width = '0';
+        }
     </script>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
