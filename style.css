@@ -40,12 +40,13 @@ Header and Navbar styles start
 
 /*-------Navbar Brand style-------*/
 
-.navbar-brand {
+.nav-logo {
     font-size: 2rem;
     font-weight: 900;
+    color: #000;
 }
 
-.navbar-brand:hover {
+.nav-logo:hover {
     cursor: pointer;
 }
 
@@ -55,7 +56,7 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 nav ul li {
@@ -65,7 +66,7 @@ nav ul li {
 nav ul li a {
     height: 50%;
     /* line-height: 50px; */
-    padding: 0 0.7rem;
+    /* padding: 0 0.7rem; */
     /* display: block; */
     color: #000;
 }
@@ -74,25 +75,25 @@ nav ul li a:hover {
     color: red;
     text-decoration: none;
 }
+/*-----------style Specificly for Large Devices------------*/
+.hide-desktop, .toggle-menu {
+    display: none;
+}
 
 /*-----------Navbar Middle Sections style------------*/
 
 .nav-middle-link {
-    padding: 0 1rem;
+    /* padding: 0 1rem; */
     font-size: 1rem;
     line-height: 1.4rem;
     font-weight: 500;
 }
 
 .nav-middle-link i {
-    margin-left: 0.3rem;
+    margin-left: 0.4rem;
 }
 
 /*-----------Navbar Toggle style------------*/
-.toggle-menu {
-   
-}
-
 .menu-style {
     text-transform: uppercase;
     padding: 0.4rem 0;
@@ -112,6 +113,7 @@ nav ul li a:hover {
     border-right: 1px solid rgb(218, 218, 218);
     color: rgb(136, 136, 136);
     font-weight: lighter;
+    padding: 0 0.7rem;
     position: relative;
 }
 
@@ -130,17 +132,42 @@ nav ul li a:hover {
     border-right: none;
 }
 
-@media (max-width: 991px) {
+@media only screen and (max-width: 991px) {
     #brand {
         max-width: 100%;
         /* margin-left: 18rem ; */
         text-align: center !important;
         /* padding-bottom: 2rem 0 !important; */
         display: block;
-        margin-bottom: 1rem;
+        margin-bottom: 3rem;
     }
     .navbar-brand:hover {
         cursor: pointer;
+    }
+
+    .toggle-menu {
+        display: block;
+        float: left;
+    }
+
+    .header-middle {
+        /* display: none; */
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 30vw;
+        height: 100vh;
+        background: #aaa;
+        transition: 0.5s;
+    }
+
+    .navbar-middle {
+        display: block;
+        text-align: left;
+    }
+
+    .hide-desktop {
+        display: block;
     }
     
 }
