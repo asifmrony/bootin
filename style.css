@@ -226,7 +226,7 @@ Product Slider styles Start
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-    height: 484px;
+    /* height: 484px; */
 }
 
 .slider-1 {
@@ -250,13 +250,12 @@ Product Slider styles Start
 .product-image img {
     /* max-width: 100%; */
     position: relative;
-    top: 80px;
+    top: 5rem;
 }
 
 .product-text {
     width: 48%;
-    padding: 80px 50px 0 20px;
-    padding-top: 80px;
+    padding: 5rem 2rem 0 2rem;
     color: #fff;
 }
 .product-title a{
