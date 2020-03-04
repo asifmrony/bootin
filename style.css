@@ -141,6 +141,7 @@ nav ul li a:hover {
     border-right: none;
 }
 
+/*-----------Navbar Responsive and Mobile Menu style------------*/
 @media only screen and (max-width: 991px) {
     #brand {
         max-width: 100%;
@@ -165,7 +166,7 @@ nav ul li a:hover {
         position: absolute;
         top: -123px;
         left: -15px;
-        width: 50vw;
+        width: 0;
         height: 100vh;
         background: rgb(253, 253, 253);
         transition: 0.5s;
@@ -204,4 +205,99 @@ nav ul li a:hover {
         float: right;
     }
 
+}
+/*=================================
+Header and Navbar styles End
+===================================*/
+
+/*=================================
+Product Slider styles Start
+===================================*/
+.owl-stage {
+    margin-bottom: 8rem;
+}
+
+/* .owl-item {
+    width: 749px !important;
+} */
+
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    height: 484px;
+}
+
+.slider-1 {
+    background-color: rgb(218, 175, 175);
+}
+
+.slider-2 {
+    background-color: rgb(35, 163, 185);
+}
+
+.slider-3 {
+    background-color: rgb(255, 160, 71);
+}
+
+.product-image {
+    width: 52%;
+    height: auto;
+    padding: 0 50px;
+}
+
+.product-image img {
+    /* max-width: 100%; */
+    position: relative;
+    top: 80px;
+}
+
+.product-text {
+    width: 48%;
+    padding: 80px 50px 0 20px;
+    padding-top: 80px;
+    color: #fff;
+}
+.product-title a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #fff;
+    font-family: 'Merriweather', sans-serif;
+}
+
+.product-author {
+    margin: 0.9rem 0;
+}
+
+.product-author a {
+    color: #fff;
+    font-size: 1.1rem;
+    text-decoration: none;
+    font-family: 'Merriweather', sans-serif;
+}
+
+.product-description {
+    /* text-align: justify; */
+}
+
+.product-button {
+    margin-top: 2.8rem;
+}
+
+.product-button a {
+    text-decoration: none;
+    padding: 1rem 2.2rem;
+    background-color: #fff;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 0px;
+    /* z-index: 1; */
+    box-shadow: 0 13px 29.4px 0.6px rgba(43,43,43,.25);
+}
+
+.product-button a:hover {
+    color: #fff;
+    background-color: tomato;
 }

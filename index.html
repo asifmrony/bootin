@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="/resources/OwlCarousel/css/owl.carousel.min.css">
     <link rel="stylesheet" href="/resources/OwlCarousel/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/script.js">
 </head>
 
 <body>
@@ -30,7 +29,7 @@
 
                     <!-- <div class="collapse navbar-collapse"></div> -->
                     <div class="header-middle" id="mobileSideMenu">
-                        <ul class="navbar-middle" id="navbar-middle">
+                        <ul class="navbar-middle">
                             <li class="hide-desktop">
                                 <i class="far fa-times-circle cross" onclick="closeSlideMenu()"></i>
                             </li>
@@ -83,64 +82,106 @@
     <!-- header and nav section end -->
 
     <main>
-        <div class="slider">
-            <div class="owl-carousel owl-theme">
-                <div class="item">
-                    <h4>1</h4>
-                </div>
-                <div class="item">
-                    <h4>2</h4>
-                </div>
-                <div class="item">
-                    <h4>3</h4>
-                </div>
-                <div class="item">
-                    <h4>4</h4>
-                </div>
-                <div class="item">
-                    <h4>5</h4>
-                </div>
-                <div class="item">
-                    <h4>6</h4>
-                </div>
-                <div class="item">
-                    <h4>7</h4>
-                </div>
-                <div class="item">
-                    <h4>8</h4>
-                </div>
-                <div class="item">
-                    <h4>9</h4>
-                </div>
-                <div class="item">
-                    <h4>10</h4>
-                </div>
-                <div class="item">
-                    <h4>11</h4>
-                </div>
-                <div class="item">
-                    <h4>12</h4>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <!-- <h4>1</h4> -->
+                <div class="slider-1 wrapper">
+                    <div class="product-image">
+                        <a href="#"><img src="/resources/image/product-1.jpg" class="img-fluid"
+                                alt="product 1 image"></a>
+                    </div>
+                    <div class="product-text">
+                        <div class="product-title"><a href="#">Cup Cake Diraes</a></div>
+                        <div class="product-author">
+                            by <a href="#">Anna Hillton</a>
+                        </div>
+                        <div class="rating"></div>
+                        <div class="product-description">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis nobis eum, neque
+                            tempore nisi amet
+                            quia? Veritatis libero incidunt facilis!
+                        </div>
+                        <div class="product-button">
+                            <a href="#">Add To Cart</a>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="item" >
+                <div class="slider-2 wrapper">
+                    <div class="product-image">
+                        <a href="#"><img src="/resources/image/product-2.jpg" class="img-fluid" alt="product 1 image"></a>
+                    </div>
+                    <div class="product-text">
+                        <div class="product-title"><a href="#">Cup Cake Diraes</a></div>
+                        <div class="product-author">
+                            by <a href="#">Anna Hillton</a>
+                        </div>
+                        <div class="rating"></div>
+                        <div class="product-description">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis nobis eum, neque tempore nisi amet
+                            quia? Veritatis libero incidunt facilis!
+                        </div>
+                        <div class="product-button">
+                            <a href="#">Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="slider-3 wrapper">
+                    <div class="product-image">
+                        <a href="#"><img src="/resources/image/product-3.jpg" class="img-fluid" alt="product 2 image"></a>
+                    </div>
+                    <div class="product-text">
+                        <div class="product-title"><a href="#">Cup Cake Diraes</a></div>
+                        <div class="product-author">
+                            by <a href="#">Anna Hillton</a>
+                        </div>
+                        <div class="rating"></div>
+                        <div class="product-description">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis nobis eum, neque tempore nisi amet
+                            quia? Veritatis libero incidunt facilis!
+                        </div>
+                        <div class="product-button">
+                            <a href="#">Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="item">
+                <h4>4</h4>
+            </div>
+            <div class="item">
+                <h4>5</h4>
+            </div>
+            <div class="item">
+                <h4>6</h4>
+            </div> -->
         </div>
+
+
+        
     </main>
 
+    <script src="/script.js"></script>
     <script src="/resources/OwlCarousel/js/jquery.min.js"></script>
     <script src="/resources/OwlCarousel/js/owl.carousel.js"></script>
     <script type="text/javascript">
         $('.owl-carousel').owlCarousel({
+            center: true,
+            items: 2,
             loop: true,
-            margin: 10,
-            nav: true,
+            margin: 1,
             responsive: {
                 0: {
                     items: 1
                 },
                 600: {
-                    items: 3
+                    items: 1
                 },
-                1000: {
-                    items: 5
+                1200: {
+                    items: 3
                 }
             }
         })
