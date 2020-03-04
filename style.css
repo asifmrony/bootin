@@ -206,6 +206,7 @@ nav ul li a:hover {
     }
 
 }
+
 /*=================================
 Header and Navbar styles End
 ===================================*/
@@ -226,7 +227,7 @@ Product Slider styles Start
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-    /* height: 484px; */
+    /* height: 60vh; */
 }
 
 .slider-1 {
@@ -243,22 +244,25 @@ Product Slider styles Start
 
 .product-image {
     width: 52%;
+    /* height: 100%; */
     height: auto;
-    padding: 0 50px;
+    padding: 0 3.9vw;
 }
 
 .product-image img {
-    /* max-width: 100%; */
+    max-height: 50vh;
     position: relative;
-    top: 5rem;
+    top: 9.17vh;
+    /* 9.17vh */
 }
 
 .product-text {
     width: 48%;
-    padding: 5rem 2rem 0 2rem;
+    padding: 9.17vh 2.42vw 1.2vh 1.21vw;
     color: #fff;
 }
-.product-title a{
+
+.product-title a {
     text-decoration: none;
     font-size: 1.5rem;
     color: #fff;
@@ -266,7 +270,7 @@ Product Slider styles Start
 }
 
 .product-author {
-    margin: 0.9rem 0;
+    margin: 1.7vh 0;
 }
 
 .product-author a {
@@ -281,22 +285,26 @@ Product Slider styles Start
 }
 
 .product-button {
-    margin-top: 2.8rem;
+    margin-top: 5.14vh;
 }
 
 .product-button a {
     text-decoration: none;
-    padding: 1rem 2.2rem;
+    padding: 1.83vh 2vw;
     background-color: #fff;
     font-size: 0.8rem;
     font-weight: 700;
     color: #000;
     margin-bottom: 0px;
     /* z-index: 1; */
-    box-shadow: 0 13px 29.4px 0.6px rgba(43,43,43,.25);
+    box-shadow: 0 13px 29.4px 0.6px rgba(43, 43, 43, .25);
 }
 
 .product-button a:hover {
     color: #fff;
     background-color: tomato;
 }
+
+@media only screen and (min-width:768px and max-width:1200px) {}
+
+@media only screen and (max-width:767px) {}
