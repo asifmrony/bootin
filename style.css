@@ -214,9 +214,9 @@ Header and Navbar styles End
 /*=================================
 Product Slider styles Start
 ===================================*/
-.owl-stage {
+/* .owl-stage {
     margin-bottom: 8rem;
-}
+} */
 
 /* .owl-item {
     width: 749px !important;
@@ -308,3 +308,11 @@ Product Slider styles Start
 @media only screen and (min-width:768px and max-width:1200px) {}
 
 @media only screen and (max-width:767px) {}
+
+
+/*===================================
+Product Category showcase styling start
+=====================================*/
+/* .category-section {
+    margin: 10% 0;
+} */

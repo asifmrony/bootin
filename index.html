@@ -8,9 +8,15 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-    <link rel="stylesheet" href="/resources/OwlCarousel/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="/resources/OwlCarousel/css/owl.theme.default.min.css">
+    <!-- <link rel="stylesheet" href="/resources/OwlCarousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/resources/OwlCarousel/css/owl.theme.default.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
     <link rel="stylesheet" href="/style.css">
+
+    <style>
+
+    </style>
 </head>
 
 <body>
@@ -82,9 +88,9 @@
     <!-- header and nav section end -->
 
     <main>
-        <div class="owl-carousel owl-theme">
+        <!-- <div class="owl-carousel owl-theme"> -->
+        <div class="my-slider">
             <div class="item">
-                <!-- <h4>1</h4> -->
                 <div class="slider-1 wrapper">
                     <div class="product-image">
                         <a href="#"><img src="/resources/image/product-1.jpg" class="img-fluid"
@@ -153,17 +159,13 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="item">
-                <h4>4</h4>
-            </div>
-            <div class="item">
-                <h4>5</h4>
-            </div>
-            <div class="item">
-                <h4>6</h4>
-            </div> -->
-
         </div>
+        <!-- 
+        <div class="things">
+            <div style="height: 500px;"><img src="/resources/image/product-1.jpg" alt="pr-1"></div>
+            <div style="height: 500px;"><img src="/resources/image/product-2.jpg" alt="pr-2"></div>
+            <div style="height: 500px;"><img src="/resources/image/product-3.jpg" alt="pr-3"></div>
+        </div> -->
 
         <!-- <div class="slider-3 wrapper">
             <div class="product-image">
@@ -185,7 +187,7 @@
             </div>
         </div> -->
 
-        <div class="category-section">
+        <!-- <div class="category-section">
             <div class="container">
                 <div class="row">
                     <div class="col col-xl-2">
@@ -246,20 +248,49 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
 
     </main>
 
-    <script src="/script.js"></script>
-    <script src="/resources/OwlCarousel/js/jquery.min.js"></script>
+    <!-- <script src="/script.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).on('ready', function () {
+            $(".my-slider").slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                dots: true,
+                centerMode: true,
+                focusOnSelect: true
+            });
+
+            $('.things').slick({
+                dots: true,
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 1000
+            });
+        });
+
+        function openSlideMenu() {
+            document.getElementById('mobileSideMenu').style.width = '50vw';
+        }
+
+        function closeSlideMenu() {
+            document.getElementById('mobileSideMenu').style.width = '0';
+        }
+    </script>
+
+    <!-- <script src="/resources/OwlCarousel/js/jquery.min.js"></script>
     <script src="/resources/OwlCarousel/js/owl.carousel.js"></script>
     <script type="text/javascript">
         $('.owl-carousel').owlCarousel({
             center: true,
             items: 2,
             loop: true,
-            margin: 1,
+            margin: 10,
             responsive: {
                 0: {
                     items: 1
@@ -273,14 +304,14 @@
             }
         })
 
-        function openSlideMenu() {
-            document.getElementById('mobileSideMenu').style.width = '50vw';
-        }
+    function openSlideMenu() {
+    document.getElementById('mobileSideMenu').style.width = '50vw';
+    }
 
-        function closeSlideMenu() {
-            document.getElementById('mobileSideMenu').style.width = '0';
-        }
-    </script>
+    function closeSlideMenu() {
+    document.getElementById('mobileSideMenu').style.width = '0';
+    }
+    </script> -->
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
