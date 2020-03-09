@@ -214,19 +214,20 @@ Header and Navbar styles End
 /*=================================
 Product Slider styles Start
 ===================================*/
-/* .owl-stage {
-    margin-bottom: 8rem;
-} */
+.slider-main-wrapper{    
+    margin-bottom: 100px !important;
+}
 
-/* .owl-item {
-    width: 749px !important;
-} */
+.slider-main-wrapper .col {
+    padding: 0;
+}
+
+.slider-main-wrapper .container-fluid {
+    padding: 0;
+}
 
 .wrapper {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    /* min-height: 60vh; */
+    
 }
 
 .slider-1 {
@@ -242,7 +243,7 @@ Product Slider styles Start
 }
 
 .product-image {
-    width: 52%;
+    /* width: 52%; */
     /* height: 100%; */
     height: auto;
     padding: 0 3.9vw;
@@ -256,7 +257,7 @@ Product Slider styles Start
 }
 
 .product-text {
-    width: 48%;
+    /* width: 48%; */
     padding: 9.17vh 2.42vw 1.2vh 1.21vw;
     color: #fff;
 }
@@ -287,6 +288,7 @@ Product Slider styles Start
 
 .product-button {
     margin-top: 5.14vh;
+    margin-bottom: 0.2vh;
 }
 
 .product-button a {
@@ -307,15 +309,12 @@ Product Slider styles Start
 }
 
 @media only screen and (max-width:1199px) {
-    .wrapper {
-        min-height: 457px;
-        max-height: 748px;
+    .each-item {
+       
     }
 
-    .item {
-        /* max-height: 792px; */
-        min-height: 700px;
-        height: 810px;
+    .wrapper {
+        
     }
     
     .product-image img {
@@ -360,3 +359,52 @@ Product Category showcase styling start
 /* .category-section {
     margin: 10% 0;
 } */
+.category-section {
+    background-color: #F5F5F5;
+    margin-bottom: 90px !important;
+    padding-left: 74.5px;
+    padding-right: 74.5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.content-wrapper:hover {
+    
+}
+
+
+.cat-icon {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    font-size: 25px;
+    overflow: hidden;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, .2);
+    line-height: 60px;
+    color: rgb(102, 101, 101);
+}
+
+.category-type-part .name {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.category-type-part .availability {
+    margin-bottom: 0;
+}
+
+@media only screen and (min-width: 992px) {
+    .my-row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .my-col-xl {
+        max-width: 240px;
+    }
+} 
+
