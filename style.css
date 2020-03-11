@@ -368,9 +368,15 @@ Product Category showcase styling start
     padding-bottom: 20px;
 }
 
-.content-wrapper:hover {
-    
+.content-wrapper:hover h3{
+    color: #F86D72;
 }
+
+.content-wrapper:hover .cat-icon{
+    background-color: #F86D72;
+    color: #fff;
+}
+
 
 
 .cat-icon {
@@ -408,3 +414,25 @@ Product Category showcase styling start
     }
 } 
 
+
+/*==================================================
+New Arrival and Author Styling Start
+====================================================*/
+.new-arrival-books-wrapper .heading, .author-top-wrapper .heading{
+    margin-bottom: 5%;
+    font-weight: 600;
+}
+
+.mk-border-btm {
+    padding-bottom: 2vh;
+    border-bottom: 2px solid #F86D72;
+}
+
+/* Style for Testing */
+.col-xl-3 {
+    border: 1px solid #aaa;
+}
+
+.main-col, .section-col {
+    padding: 0;
+}
