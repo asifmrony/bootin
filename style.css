@@ -6,6 +6,7 @@ Global styles
 :root {
     --primary-font: 'Muli', sans-serif;
     --Secondary-font: 'Merriweather', sans-serif;
+    --theme-color: #F86D72;
 }
 
 body {
@@ -361,11 +362,11 @@ Product Category showcase styling start
 } */
 .category-section {
     background-color: #F5F5F5;
-    margin-bottom: 90px !important;
+    margin-bottom: 100px !important;
     padding-left: 74.5px;
     padding-right: 74.5px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .content-wrapper:hover h3{
@@ -418,8 +419,14 @@ Product Category showcase styling start
 /*==================================================
 New Arrival and Author Styling Start
 ====================================================*/
+
+/*-----------Only New Arrival Styles---------------*/
+.new-arrival-author-section {
+    margin-bottom: 90px;
+}
+
 .new-arrival-books-wrapper .heading, .author-top-wrapper .heading{
-    margin-bottom: 5%;
+    margin-bottom: 8%;
     font-weight: 600;
 }
 
@@ -428,11 +435,184 @@ New Arrival and Author Styling Start
     border-bottom: 2px solid #F86D72;
 }
 
-/* Style for Testing */
+/* Style for Testing 
 .col-xl-3 {
+    border: 1px solid #aaa;
+}*/
+
+.main-col {
+    padding: 0;
     border: 1px solid #aaa;
 }
 
-.main-col, .section-col {
+.section-col {
     padding: 0;
+    border: 1px solid rgb(161, 29, 29);
+    max-width: 22%;
+    margin-right: 2vw;
+}
+
+.section-col:nth-child(4) {
+    margin-right: 0;
+}
+
+.top-image {
+    width: 100%;
+    height: 10%;
+    overflow: hidden;
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, .2);
+}
+
+.top-image img {
+    /* display: block; */
+    width: 100%;
+    height: auto;
+}
+
+/*--------------- Overlay and Image hover styles -----------*/
+
+.img-container {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  /* background-color: #008CBA; */
+}
+
+.img-container:hover .overlay{
+    opacity: 1;
+    background: url(/resources/image/product-5.jpg);
+    background-size: cover;
+}
+
+
+.icon-container {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    opacity: 0.8;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 1;
+    border: 1px solid var(--theme-color);
+    color: #000;
+    margin: 0 auto 15px auto;
+    position: relative;
+}
+
+.icon i {
+    position: absolute;
+    left: 30%;
+    top: 30%;
+} 
+
+.icon-container:hover 
+
+
+.section1-wrapper, .section3-wrapper, .section5-wrapper, .section7-wrapper {
+    margin-bottom: 10vh;
+}
+
+.section > a:hover, .book-author > a:hover {
+    color: var(--theme-color);
+    text-decoration: none;
+}
+
+.section .book-name {
+    color: black;
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.section .book-author {
+    font-style: italic;
+    margin-bottom: 1rem;
+    margin-top: 0.3rem;
+}
+
+.book-author a {
+    color: #aaa;
+    font-style: normal;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.section .book-price {
+    color: var(--theme-color);
+}
+
+/*-----------Only Author Styles---------------*/
+.author-top-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.author-content {
+    margin-top: 65px;
+    text-align: center;
+} 
+
+.author-content .author-image {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.author-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.author-name {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.genre {
+    margin-bottom: 2.5rem;
+    font-weight: 600;
+    color: #aaa;
+}
+
+.social-links {
+    margin-top: 40px;
+    padding-bottom: 50px;
+    border-bottom: 3px solid var(--theme-color);
+}
+
+.social-links ul {
+    margin: 0;
+    padding: 0;
+}
+
+.social-links ul li {
+    list-style-type: none;
+    display: inline;
+    margin-right: 1vw;
+}
+
+.social-links ul li a {
+    color: #000;
+    font-size: 0.8em;
 }
