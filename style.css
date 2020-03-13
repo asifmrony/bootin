@@ -641,7 +641,7 @@ New Arrival and Author Styling Start
 Featured Section Styling Start
 ====================================================*/
 .featured-section {
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 }
 
 .featured-section .heading {
@@ -666,3 +666,68 @@ Featured Section Styling Start
 /*==================================================
 Exihibition Parallax Section Styling Start
 ====================================================*/
+.parallax-section {
+    height: 70vh;
+    width: 100%;
+    margin-bottom: 100px;
+    background-image: url(./resources/image/parallax-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-image {}
+
+.text-container {
+    color: #fff;
+    text-align: center;
+    width: 60vw;
+}
+
+.small-text {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.main-heading {
+    font-size: 45px;
+    margin-top: 35px;
+    margin-bottom: 55px;
+}
+
+.button-div {}
+
+.button {
+    color: #fff;
+    line-height: 45px;
+    padding: 0 35px;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 700;
+    background: var(--theme-color);
+    box-shadow: 0 13px 29.4px .6px rgba(43, 43, 43, .25);
+    border: none;
+}
+
+.button:hover {
+    background-color: #ee3339;
+    cursor: pointer;
+}
+
+/*==================================================
+Best Author of the week Section Styling Start
+====================================================*/
+.author-week-section {}
+
+.author-week-section .heading {
+    padding-bottom: 12px;
+    margin-bottom: 5%;
+    font-weight: 600;
+    text-align: center;
+}
