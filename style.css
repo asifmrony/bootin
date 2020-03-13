@@ -222,11 +222,11 @@ Product Slider styles Start
 .each-item {
     width: 100%;
     height: 600px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .slider-wrapper {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 470px;
 }
 
@@ -369,8 +369,8 @@ Product Category showcase styling start
 .category-section {
     background-color: #F5F5F5;
     margin-bottom: 100px !important;
-    padding-left: 74.5px;
-    padding-right: 74.5px;
+    padding-left: 60px;
+    padding-right: 60px;
     padding-top: 25px;
     padding-bottom: 25px;
 }
@@ -417,7 +417,7 @@ Product Category showcase styling start
     }
 
     .my-col-xl {
-        max-width: 240px;
+        max-width: 20%;
     }
 }
 
@@ -442,19 +442,21 @@ New Arrival and Author Styling Start
     border-bottom: 2px solid #F86D72;
 }
 
-/* Style for Testing 
-.col-xl-3 {
+/* Style for Testing */
+/* .col-xl-3 {
     border: 1px solid #aaa;
-}*/
+}
 
 .main-col {
     padding: 0;
     border: 1px solid #aaa;
-}
+} */
+
+/*Styles for testing end*/
 
 .section-col {
     padding: 0;
-    border: 1px solid rgb(161, 29, 29);
+    /* border: 1px solid rgb(161, 29, 29); */
     max-width: 22%;
     margin-right: 2vw;
 }
@@ -480,6 +482,7 @@ New Arrival and Author Styling Start
 
 .img-container {
     position: relative;
+    margin-bottom: 1rem;
 }
 
 .overlay {
@@ -518,10 +521,10 @@ New Arrival and Author Styling Start
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: var(--theme-color);
     opacity: 1;
     border: 1px solid var(--theme-color);
-    color: #000;
+    color: #fff;
     margin: 0 auto 15px auto;
     position: relative;
 }
@@ -532,7 +535,12 @@ New Arrival and Author Styling Start
     top: 30%;
 }
 
-.icon-container:hover .section1-wrapper,
+.icon:hover {
+    background-color: #fff;
+    color: var(--theme-color);
+}
+
+.section1-wrapper,
 .section3-wrapper,
 .section5-wrapper,
 .section7-wrapper {
@@ -540,6 +548,7 @@ New Arrival and Author Styling Start
 }
 
 .section>a:hover,
+.ft-content-wrapper>a:hover,
 .book-author>a:hover {
     color: var(--theme-color);
     text-decoration: none;
@@ -552,7 +561,8 @@ New Arrival and Author Styling Start
     margin-bottom: 1rem;
 }
 
-.section .book-author {
+.section,
+.ft-content-wrapper .book-author {
     font-style: italic;
     margin-bottom: 1rem;
     margin-top: 0.3rem;
@@ -563,9 +573,11 @@ New Arrival and Author Styling Start
     font-style: normal;
     font-size: 1rem;
     font-weight: 500;
+    margin-left: 0.5rem
 }
 
-.section .book-price {
+.section,
+.ft-content-wrapper .book-price {
     color: var(--theme-color);
 }
 
@@ -624,3 +636,33 @@ New Arrival and Author Styling Start
     color: #000;
     font-size: 0.8em;
 }
+
+/*==================================================
+Featured Section Styling Start
+====================================================*/
+.featured-section {
+    margin-bottom: 50px;
+}
+
+.featured-section .heading {
+    padding-bottom: 12px;
+    margin-bottom: 8%;
+    font-weight: 600;
+    text-align: center;
+}
+
+.heading .theme-btm-brdr {
+    border-bottom: 2px solid var(--theme-color);
+    padding-bottom: 12px;
+}
+
+.ft-content-wrapper .book-name {
+    color: black;
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+/*==================================================
+Exihibition Parallax Section Styling Start
+====================================================*/
