@@ -215,20 +215,33 @@ Header and Navbar styles End
 /*=================================
 Product Slider styles Start
 ===================================*/
-.slider-main-wrapper{    
-    margin-bottom: 100px !important;
+.slider-main-wrapper {
+    margin-bottom: 90px;
 }
 
-.slider-main-wrapper .col {
-    padding: 0;
+.each-item {
+    width: 100%;
+    height: 600px;
+    border: 1px solid red;
 }
 
-.slider-main-wrapper .container-fluid {
-    padding: 0;
+.slider-wrapper {
+    border: 1px solid black;
+    height: 470px;
 }
 
-.wrapper {
-    
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background-color: #f86d72;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    outline: none;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    margin: 5px;
+    background-color: #FBB6B8;
 }
 
 .slider-1 {
@@ -310,14 +323,10 @@ Product Slider styles Start
 }
 
 @media only screen and (max-width:1199px) {
-    .each-item {
-       
-    }
+    .each-item {}
 
-    .wrapper {
-        
-    }
-    
+    .wrapper {}
+
     .product-image img {
         min-height: 432px;
         max-height: 748px;
@@ -326,19 +335,18 @@ Product Slider styles Start
 }
 
 @media only screen and (max-width:767px) {
-    /* .wrapper {
-        display: block;
-    }
-    
-    .product-image{
-        display: block;
+    .each-item {
         width: 100%;
         height: auto;
     }
 
-    .item { */
-        /* max-height: 1375px; */
-        /* height: 1100px; 
+    .slider-wrapper {
+        height: 100%;
+        padding: 20px
+    }
+
+    .product-image {
+        padding: 0;
     }
 
     .product-image img {
@@ -346,10 +354,8 @@ Product Slider styles Start
     }
 
     .product-text {
-        width: 100%;
-        display: block;
-        height: auto;
-    } */
+        margin-top: 30px;
+    }
 }
 
 
@@ -369,11 +375,11 @@ Product Category showcase styling start
     padding-bottom: 25px;
 }
 
-.content-wrapper:hover h3{
+.content-wrapper:hover h3 {
     color: #F86D72;
 }
 
-.content-wrapper:hover .cat-icon{
+.content-wrapper:hover .cat-icon {
     background-color: #F86D72;
     color: #fff;
 }
@@ -413,7 +419,7 @@ Product Category showcase styling start
     .my-col-xl {
         max-width: 240px;
     }
-} 
+}
 
 
 /*==================================================
@@ -425,7 +431,8 @@ New Arrival and Author Styling Start
     margin-bottom: 90px;
 }
 
-.new-arrival-books-wrapper .heading, .author-top-wrapper .heading{
+.new-arrival-books-wrapper .heading,
+.author-top-wrapper .heading {
     margin-bottom: 8%;
     font-weight: 600;
 }
@@ -477,18 +484,18 @@ New Arrival and Author Styling Start
 
 .overlay {
     position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .3s ease;
-  /* background-color: #008CBA; */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    /* background-color: #008CBA; */
 }
 
-.img-container:hover .overlay{
+.img-container:hover .overlay {
     opacity: 1;
     background: url(/resources/image/product-5.jpg);
     background-size: cover;
@@ -523,16 +530,17 @@ New Arrival and Author Styling Start
     position: absolute;
     left: 30%;
     top: 30%;
-} 
+}
 
-.icon-container:hover 
-
-
-.section1-wrapper, .section3-wrapper, .section5-wrapper, .section7-wrapper {
+.icon-container:hover .section1-wrapper,
+.section3-wrapper,
+.section5-wrapper,
+.section7-wrapper {
     margin-bottom: 10vh;
 }
 
-.section > a:hover, .book-author > a:hover {
+.section>a:hover,
+.book-author>a:hover {
     color: var(--theme-color);
     text-decoration: none;
 }
@@ -570,7 +578,7 @@ New Arrival and Author Styling Start
 .author-content {
     margin-top: 65px;
     text-align: center;
-} 
+}
 
 .author-content .author-image {
     width: 100%;
