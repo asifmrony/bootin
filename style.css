@@ -723,7 +723,9 @@ Exihibition Parallax Section Styling Start
 /*==================================================
 Best Author of the week Section Styling Start
 ====================================================*/
-.author-week-section {}
+.author-week-section {
+    margin-bottom: 150px;
+}
 
 .author-week-section .heading {
     padding-bottom: 12px;
@@ -731,3 +733,94 @@ Best Author of the week Section Styling Start
     font-weight: 600;
     text-align: center;
 }
+
+.left-content {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 100px;
+    margin-right: 20px;
+}
+
+.bestseller img {
+    margin-left: 20px;
+}
+
+.bestauthor img {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.bestauthor .image-2 {
+    margin-left: 20px;
+}
+
+.middle-content img {
+    width: 100%;
+    height: auto;
+}
+
+.middle-content a {
+    display: inline-block;
+    overflow: hidden;
+    /* vertical-align: top; */
+}
+
+.middle-content a img {
+    /* backface-visibility: hidden; */
+    transition: opacity 1s ease 0s, transform 1s ease 0s;
+}
+
+.middle-content a:hover img {
+    transform: scale3d(1.1, 1.1, 1);
+}
+
+.right-content {
+    margin-top: 100px;
+    padding-left: 40px;
+    padding-right: 30px;
+    justify-content: center;
+}
+
+.author-review {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+    font-weight: 400;
+}
+
+.week-author-name {
+    font-weight: 600;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.social-networks a {
+    margin-right: 2rem;
+    color: #666;
+}
+
+.social-networks a:hover {
+    color: var(--theme-color);
+}
+
+@media only screen and (max-width: 768px) {
+    .left-content {
+        display: block;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .middle-content {
+        text-align: center;
+    }
+
+    .right-content {
+        margin-top: 50px;
+    }
+}
+
+/*==================================================
+Blog update Section Styling Start
+====================================================*/
