@@ -699,6 +699,7 @@ Exihibition Parallax Section Styling Start
     font-size: 45px;
     margin-top: 35px;
     margin-bottom: 55px;
+    font-weight: bold;
 }
 
 .button-div {}
@@ -824,3 +825,67 @@ Best Author of the week Section Styling Start
 /*==================================================
 Blog update Section Styling Start
 ====================================================*/
+.blog-update-section {
+    margin-bottom: 100px;
+}
+
+.blog-update-section .heading {
+    padding-bottom: 12px;
+    margin-bottom: 5%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.blog-content-wrapper img {
+    width: 100%;
+    height: auto;
+}
+
+.blog-content-wrapper .content {
+    text-align: center;
+    line-height: 1.6;
+}
+
+.blog-content-wrapper .content .blog-written {
+    color: var(--theme-color);
+    margin-top: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.blog-content-wrapper .content .blog-title {
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.blog-content-wrapper .content .blog-title:hover {
+    color: var(--theme-color);
+    text-decoration: none;
+}
+
+.blog-content-wrapper .content .blog-author {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.blog-content-wrapper .content .blog-author a {
+    color: #666;
+}
+
+.blog-content-wrapper .content .blog-author a:hover {
+    color: var(--theme-color);
+    text-decoration: none;
+}
+
+.blog-content-wrapper .content .blog-text {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    font-size: 15px;
+    color: #666;
+    font-weight: 400;
+}
