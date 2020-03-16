@@ -637,6 +637,17 @@ New Arrival and Author Styling Start
     font-size: 0.8em;
 }
 
+@media only screen and (max-width: 768px) {
+    .main-col {
+        padding: 0;
+    }
+    
+    .author-top-wrapper {
+        padding: 0;
+        margin-top: 50px;
+    }
+}
+
 /*==================================================
 Featured Section Styling Start
 ====================================================*/
@@ -667,7 +678,8 @@ Featured Section Styling Start
 Exihibition Parallax Section Styling Start
 ====================================================*/
 .parallax-section {
-    height: 70vh;
+    /* height: 70vh; */
+    height: 438px;
     width: 100%;
     margin-bottom: 100px;
     background-image: url(./resources/image/parallax-bg.jpg);
@@ -721,6 +733,27 @@ Exihibition Parallax Section Styling Start
     cursor: pointer;
 }
 
+@media only screen and (max-width: 576px) {
+    .parallax-section {
+        height: 530px;
+        margin-bottom: 60px;
+    }
+
+    .small-text {
+        font-size: 1.2rem;
+    }
+
+    .main-heading {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .parallax-section {
+        height: 480px;
+    }
+}
+
 /*==================================================
 Best Author of the week Section Styling Start
 ====================================================*/
@@ -735,12 +768,23 @@ Best Author of the week Section Styling Start
     text-align: center;
 }
 
+.author-week-content-wrapper {
+    background: url(./resources/image/author-week-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.left-content-container {
+    
+}
+
 .left-content {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: end; */
     margin-top: 100px;
     margin-right: 20px;
+    text-align: right;
 }
 
 .bestseller img {
@@ -803,6 +847,47 @@ Best Author of the week Section Styling Start
 
 .social-networks a:hover {
     color: var(--theme-color);
+}
+
+@media only screen and (max-width: 1200px){
+    .left-content {
+        margin-top: 40px;
+    }
+
+    .right-content {
+        margin-top: 30px;
+    }
+
+    .week-author-name {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    
+    .week-author-name {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .social-networks a {
+        margin-right: 1rem;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .left-content {
+        display: block;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .middle-content {
+        text-align: center;
+    }
+
+    .right-content {
+        margin-top: 50px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -907,6 +992,10 @@ Blog update Section Styling Start
     font-weight: 400;
 }
 
+@media only screen and (max-width:1200px) {
+
+}
+
 /*==================================================
 Newsletter Section Styling Start
 ====================================================*/
@@ -918,6 +1007,7 @@ Newsletter Section Styling Start
     padding-top: 80px;
     padding-bottom: 80px;
     border: 5px solid rgb(250, 250, 250);
+    line-height: 1.5;
 }
 
 .community-content .community-left, .community-right {
@@ -974,6 +1064,55 @@ Newsletter Section Styling Start
     color: var(--theme-color);
 }
 
+@media only screen and (max-width:1200px){
+    .input-wrapper .input-form input {
+        width: 100%;
+    }
+
+    .input-wrapper {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:991px){
+    .community-left {
+        margin-bottom: 30px;
+    }
+
+    .community-middle {
+        margin-bottom: 40px;
+    }
+
+    .input-wrapper .input-form input {
+        width: 450px;
+    }
+
+    .input-wrapper {
+        width: 450px;
+    }
+}
+
+@media only screen and (max-width:576px){
+    .input-wrapper .input-form input {
+        width: 350px;
+    }
+
+    .input-wrapper {
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .input-wrapper .input-form input {
+        width: 250px;
+    }
+
+    .input-wrapper {
+        width: 250px;
+    }
+}
+
+
 /* -------------------Email Input and submit styles End--------------------------- */
 
 /*==================================================
@@ -1006,6 +1145,134 @@ Policy Section Styling Start
     color: #505050;
 }
 
+@media only screen and (max-width:768px) {
+    .policy-section .first-col,.second-col {
+        margin-bottom: 20px;
+    }
+}
+
 /*==================================================
 Footer top Styling Start
 ====================================================*/
+.footer-top-section {
+    font-size: 14px;
+    line-height: 1.6;
+    font-weight: 300;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ececec;
+}
+
+.first-col-wrapper,.second-col-wrapper,.third-col-wrapper,.fourth-col-wrapper {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.footer-top-section .footer-top-heading {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ececec;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.footer-top-heading .mk-border-btm {
+    padding-bottom: 19px;
+}
+
+.footer-top-content {
+    padding: 0 20px 20px 0;
+}
+
+.footer-top-content .left-icon {
+    margin-right: 10px;
+}
+
+.second-col-wrapper .footer-top-content, .third-col-wrapper .footer-top-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.second-col-wrapper .footer-top-content a, .third-col-wrapper .footer-top-content a {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.second-col-wrapper .footer-top-content a:hover, .third-col-wrapper .footer-top-content a:hover {
+    color: var(--theme-color);
+    text-decoration: none;
+}
+
+.fourth-col-wrapper img {
+    width: 100%;
+    height: auto;
+} 
+
+/* -------------------Footer-Instagram Image hover Animation style Start--------------------------- */
+.fourth-col-wrapper .insta-image {
+    position: relative;
+}
+
+
+.fourth-col-wrapper .insta-image a {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.fourth-col-wrapper .insta-image a img {
+    transition: opacity 0.5s ease 0s, transform .5s ease 0s;
+}
+
+.fourth-col-wrapper .insta-image a:hover img {
+    transform: scale3d(1.1, 1.1, 1);
+}
+
+.fourth-col-wrapper .insta-image i {
+    display: none; 
+    position: absolute;
+    right: 40%;
+    top: 30%; 
+    /* transition: 0.7s;   */
+    transition: opacity 0.5s ease 0s, transform .5s ease 0s;
+}
+
+.fourth-col-wrapper .insta-image a:hover i {
+    display: block;
+    color: #fff;
+    font-size: 25px;
+    transform: scale3d(1.1, 1.1, 1);
+}
+/* -------------------Footer Instagram Image hover Animation style End--------------------------- */
+.site-availability {
+    color: var(--theme-color);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*==================================================
+Footer Bottom Styling Start
+====================================================*/
+.footer-bottom-section {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+.footer-bottom-section .copyright-info {
+
+}
+
+.footer-bottom-section .payment-info {
+    text-align: right;
+}
+
+@media only screen and (max-width:991px) {
+    .footer-bottom-section .copyright-info {
+        text-align: center;
+    }
+    
+    .footer-bottom-section .payment-info {
+        text-align: center;
+    }
+}
