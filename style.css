@@ -641,7 +641,7 @@ New Arrival and Author Styling Start
     .main-col {
         padding: 0;
     }
-    
+
     .author-top-wrapper {
         padding: 0;
         margin-top: 50px;
@@ -774,9 +774,7 @@ Best Author of the week Section Styling Start
     background-position: center;
 }
 
-.left-content-container {
-    
-}
+.left-content-container {}
 
 .left-content {
     /* display: flex;
@@ -849,7 +847,7 @@ Best Author of the week Section Styling Start
     color: var(--theme-color);
 }
 
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 1200px) {
     .left-content {
         margin-top: 40px;
     }
@@ -862,7 +860,7 @@ Best Author of the week Section Styling Start
         font-size: 16px;
         line-height: 1.5;
     }
-    
+
     .week-author-name {
         margin-top: 2rem;
         margin-bottom: 1rem;
@@ -907,6 +905,17 @@ Best Author of the week Section Styling Start
     }
 }
 
+@media only screen and (max-width: 405px) {
+    .author-week-section .mobile-btm-brdr {
+        border-bottom: 2px solid var(--theme-color);
+        padding-bottom: 12px;
+    }
+
+    .author-week-section .theme-btm-brdr {
+        border: 0;
+    }
+}
+
 /*==================================================
 Blog update Section Styling Start
 ====================================================*/
@@ -940,6 +949,7 @@ Blog update Section Styling Start
 .blog-content-wrapper .blog-image a:hover img {
     transform: scale3d(1.1, 1.1, 1);
 }
+
 /* -------------------Blog Image hover Animation style End--------------------------- */
 
 
@@ -992,9 +1002,7 @@ Blog update Section Styling Start
     font-weight: 400;
 }
 
-@media only screen and (max-width:1200px) {
-
-}
+@media only screen and (max-width:1200px) {}
 
 /*==================================================
 Newsletter Section Styling Start
@@ -1010,7 +1018,8 @@ Newsletter Section Styling Start
     line-height: 1.5;
 }
 
-.community-content .community-left, .community-right {
+.community-content .community-left,
+.community-right {
     text-align: center;
 }
 
@@ -1021,7 +1030,7 @@ Newsletter Section Styling Start
 .community-middle .title {
     font-size: 30px;
     font-weight: 700;
-    font-family: 'Merriweather' ,serif;
+    font-family: 'Merriweather', serif;
     color: #2B2B2B;
     margin-bottom: 20px;
 }
@@ -1029,7 +1038,7 @@ Newsletter Section Styling Start
 .community-middle .sub-title {
     color: #666;
     margin-bottom: 40px;
-} 
+}
 
 /* -------------------Email Input and submit styles--------------------------- */
 .input-wrapper {
@@ -1064,7 +1073,7 @@ Newsletter Section Styling Start
     color: var(--theme-color);
 }
 
-@media only screen and (max-width:1200px){
+@media only screen and (max-width:1200px) {
     .input-wrapper .input-form input {
         width: 100%;
     }
@@ -1074,7 +1083,7 @@ Newsletter Section Styling Start
     }
 }
 
-@media only screen and (max-width:991px){
+@media only screen and (max-width:991px) {
     .community-left {
         margin-bottom: 30px;
     }
@@ -1092,7 +1101,7 @@ Newsletter Section Styling Start
     }
 }
 
-@media only screen and (max-width:576px){
+@media only screen and (max-width:576px) {
     .input-wrapper .input-form input {
         width: 350px;
     }
@@ -1102,7 +1111,7 @@ Newsletter Section Styling Start
     }
 }
 
-@media only screen and (max-width:400px){
+@media only screen and (max-width:400px) {
     .input-wrapper .input-form input {
         width: 250px;
     }
@@ -1126,7 +1135,7 @@ Policy Section Styling Start
     padding-bottom: 20px;
 }
 
-.policy-section .policy-heading{
+.policy-section .policy-heading {
     color: #000;
     font-size: 20px;
     font-weight: bold;
@@ -1146,7 +1155,9 @@ Policy Section Styling Start
 }
 
 @media only screen and (max-width:768px) {
-    .policy-section .first-col,.second-col {
+
+    .policy-section .first-col,
+    .second-col {
         margin-bottom: 20px;
     }
 }
@@ -1162,7 +1173,10 @@ Footer top Styling Start
     border-bottom: 1px solid #ececec;
 }
 
-.first-col-wrapper,.second-col-wrapper,.third-col-wrapper,.fourth-col-wrapper {
+.first-col-wrapper,
+.second-col-wrapper,
+.third-col-wrapper,
+.fourth-col-wrapper {
     padding-right: 30px;
     padding-left: 30px;
 }
@@ -1188,17 +1202,20 @@ Footer top Styling Start
     margin-right: 10px;
 }
 
-.second-col-wrapper .footer-top-content, .third-col-wrapper .footer-top-content{
+.second-col-wrapper .footer-top-content,
+.third-col-wrapper .footer-top-content {
     display: flex;
     flex-direction: column;
 }
 
-.second-col-wrapper .footer-top-content a, .third-col-wrapper .footer-top-content a {
+.second-col-wrapper .footer-top-content a,
+.third-col-wrapper .footer-top-content a {
     color: #666;
     margin-bottom: 20px;
 }
 
-.second-col-wrapper .footer-top-content a:hover, .third-col-wrapper .footer-top-content a:hover {
+.second-col-wrapper .footer-top-content a:hover,
+.third-col-wrapper .footer-top-content a:hover {
     color: var(--theme-color);
     text-decoration: none;
 }
@@ -1206,7 +1223,7 @@ Footer top Styling Start
 .fourth-col-wrapper img {
     width: 100%;
     height: auto;
-} 
+}
 
 /* -------------------Footer-Instagram Image hover Animation style Start--------------------------- */
 .fourth-col-wrapper .insta-image {
@@ -1228,10 +1245,10 @@ Footer top Styling Start
 }
 
 .fourth-col-wrapper .insta-image i {
-    display: none; 
+    display: none;
     position: absolute;
     right: 40%;
-    top: 30%; 
+    top: 30%;
     /* transition: 0.7s;   */
     transition: opacity 0.5s ease 0s, transform .5s ease 0s;
 }
@@ -1242,6 +1259,7 @@ Footer top Styling Start
     font-size: 25px;
     transform: scale3d(1.1, 1.1, 1);
 }
+
 /* -------------------Footer Instagram Image hover Animation style End--------------------------- */
 .site-availability {
     color: var(--theme-color);
@@ -1259,9 +1277,7 @@ Footer Bottom Styling Start
     padding-bottom: 15px;
 }
 
-.footer-bottom-section .copyright-info {
-
-}
+.footer-bottom-section .copyright-info {}
 
 .footer-bottom-section .payment-info {
     text-align: right;
@@ -1271,7 +1287,7 @@ Footer Bottom Styling Start
     .footer-bottom-section .copyright-info {
         text-align: center;
     }
-    
+
     .footer-bottom-section .payment-info {
         text-align: center;
     }
