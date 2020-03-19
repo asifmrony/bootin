@@ -53,6 +53,37 @@ $(".my-slider").owlCarousel({
 //     }
 // })
 
+$(".category-slider").owlCarousel({
+    loop: true,
+    center: true,
+    dots: false,
+    stagePadding: 510,
+    margin: 1,
+    responsive: {
+        0: {
+            items: 1,
+            stagePadding: 0
+        },
+        576: { //480
+            items: 2,
+            stagePadding: 0
+        },
+        768: {
+            items: 3,
+            stagePadding: 0
+        },
+        992: { //1020
+            items: 4,
+            stagePadding: 0
+        },
+        1200: {
+            items: 5,
+            stagePadding: 0
+        }
+    }
+});
+
+
 function openSlideMenu() {
     document.getElementById('mobileSideMenu').style.width = '50vw';
 }

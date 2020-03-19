@@ -373,6 +373,13 @@ Product Category showcase styling start
     padding-right: 60px;
     padding-top: 25px;
     padding-bottom: 25px;
+    /* height: 200px; */
+}
+
+.content-wrapper {
+    /* height: 65px; */
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .content-wrapper:hover h3 {
@@ -409,7 +416,7 @@ Product Category showcase styling start
 }
 
 @media only screen and (min-width: 992px) {
-    .my-row {
+    /* .my-row {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -418,7 +425,7 @@ Product Category showcase styling start
 
     .my-col-xl {
         max-width: 20%;
-    }
+    } */
 }
 
 
