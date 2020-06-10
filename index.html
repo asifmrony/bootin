@@ -22,6 +22,7 @@
     <header class="header">
         <div class="nav-container">
             <nav class="navbar navbar-expand-lg navbar-light">
+
                 <div class="col-lg-2 col-md-12 col-sm-12 col-12">
                     <!-- brand logo -->
                     <a href="#" class="nav-logo" id="brand">BOOTIN</a>
@@ -31,14 +32,21 @@
                     <!-- Collapsable responsive Button -->
                     <div class="toggle-menu"><span class="menu-style" onclick="openSlideMenu()">Menu</span></div>
 
-                    <!-- <div class="collapse navbar-collapse"></div> -->
+
                     <div class="header-middle" id="mobileSideMenu">
                         <ul class="navbar-middle">
                             <li class="hide-desktop">
                                 <i class="far fa-times-circle cross" onclick="closeSlideMenu()"></i>
                             </li>
-                            <li class="nav-middle-item active">
-                                <a href="#" class="nav-middle-link">HOME<i class="fas fa-caret-down"></i></a>
+                            <li class="nav-middle-item active home-dropdown">
+                                <a href="#" class="nav-middle-link nav-active">HOME<i class="fas fa-caret-down"></i></a>
+                                <div class="home-drowdown-content">
+                                    <a href="#">Homepage 1</a>
+                                    <a href="#">Homepage 2</a>
+                                    <a href="#">Homepage 3</a>
+                                    <a href="#">Homepage 4</a>
+                                    <a href="#">Homepage 5</a>
+                                </div>
                             </li>
                             <li class="nav-middle-item">
                                 <a href="#" class="nav-middle-link">SHOP<i class="fas fa-caret-down"></i></a>
