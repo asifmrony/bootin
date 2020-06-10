@@ -7,6 +7,7 @@ Global styles
     --primary-font: 'Muli', sans-serif;
     --Secondary-font: 'Merriweather', sans-serif;
     --theme-color: #F86D72;
+    --button-hover-color: #ee3339;
 }
 
 body {
