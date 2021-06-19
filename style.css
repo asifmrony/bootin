@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather|Muli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Muli:wght@400;500;600;700;900&display=swap');
 
 /*=================================
 Global styles
@@ -10,9 +10,15 @@ Global styles
     --button-hover-color: #ee3339;
 }
 
-body {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: 'Muli', sans-serif;
     font-size: 16px;
     line-height: 1.5em;
@@ -40,19 +46,18 @@ p {
 /*-------ALL Navbar links global style-------*/
 
 nav ul {
-    margin: 0;
-    padding: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    margin-bottom: 0;
 }
 
 nav ul li {
+    /* line-height: 50px; */
     list-style: none;
 }
 
 nav ul li a {
-    height: 50%;
-    /* line-height: 50px; */
+    /*height: 50%;*/
     /* padding: 0 0.7rem; */
     /* display: block; */
     color: #000;
@@ -84,21 +89,17 @@ Header and Navbar styles start
     cursor: pointer;
 }
 
-/*-----------style Specificly for Large Devices------------*/
-.hide-desktop,
-.toggle-menu {
-    display: none;
-}
 
 /*-----------Navbar Middle Sections style------------*/
 .nav-active {
     color: var(--theme-color);
-    text-decoration: underline;
+    padding-bottom: 1px;
+    border-bottom: 1px solid var(--theme-color);
 }
 
 .nav-middle-link {
     /* padding: 0 1rem; */
-    font-size: 1rem;
+    font-size: 0.9rem;
     line-height: 1.4rem;
     font-weight: 500;
 }
@@ -107,40 +108,34 @@ Header and Navbar styles start
     margin-left: 0.4rem;
 }
 
-/*-----------Navbar Togglar style------------*/
-.menu-style {
-    text-transform: uppercase;
-    padding: 0.4rem 0;
-    border-top: 1px solid red;
-    border-bottom: 1px solid red;
-    cursor: pointer;
-}
-
 /*-----------Navbar Dropdown Content style------------*/
 .home-dropdown {
-  float: left;
-  overflow: hidden;
+    float: left;
+    overflow: hidden;
 }
 
-.home-drowdown-content {
-    display:none;
+.submenu {
+    display: block;
     position: absolute;
     left: 0;
     min-width: 200px;
     background-color: #aaa;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index:1;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
 }
 
-.home-drowdown-content a {
-    display:block;
+.submenu a {
+    display: block;
     text-align: left;
     padding: 17px 0px 17px 25px;
     font-size: 0.9em;
 }
 
-.home-dropdown:hover .home-dropdown-content {
-  display: block;
+.navbar-middle:hover>.submenu {
+    opacity: 1;
+    visibility: visible;
 }
 
 
@@ -175,6 +170,23 @@ Header and Navbar styles start
 .last {
     border-right: none;
 }
+
+
+/*-----------style Specificly for Large Devices------------*/
+.hide-desktop,
+.toggle-menu {
+    display: none;
+}
+
+/*-----------Navbar Togglar style------------*/
+.menu-style {
+    text-transform: uppercase;
+    padding: 0.4rem 0;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+    cursor: pointer;
+}
+
 
 /*-----------Navbar Responsive and Mobile Menu style------------*/
 @media only screen and (max-width: 991px) {
@@ -472,6 +484,13 @@ New Arrival and Author Styling Start
     margin-bottom: 90px;
 }
 
+@media (min-width:1200px) {
+    .arrival-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
 .new-arrival-books-wrapper .heading,
 .author-top-wrapper .heading {
     margin-bottom: 8%;
@@ -483,23 +502,30 @@ New Arrival and Author Styling Start
     border-bottom: 2px solid #F86D72;
 }
 
-/* Style for Testing */
-/* .col-xl-3 {
-    border: 1px solid #aaa;
+@media (min-width:768px) {
+    .section-col {
+        max-width: 46%;
+    }
 }
 
-.main-col {
-    padding: 0;
-    border: 1px solid #aaa;
-} */
+@media (min-width:992px) {
+    .section-col {
+        max-width: 30%;
+    }
+}
 
-/*Styles for testing end*/
+@media (min-width:1200px) {
+    .section-col {
+        max-width: 22%;
+    }
+}
+
 
 .section-col {
     padding: 0;
     /* border: 1px solid rgb(161, 29, 29); */
-    max-width: 22%;
-    margin-right: 2vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
 }
 
 .section-col:nth-child(4) {
@@ -678,7 +704,7 @@ New Arrival and Author Styling Start
     font-size: 0.8em;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767.98px) {
     .main-col {
         padding: 0;
     }
