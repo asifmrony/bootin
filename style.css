@@ -766,6 +766,12 @@ New Arrival and Author Styling Start
     }
 }
 
+@media only screen and (max-width: 576px) {
+    .top-new-arrival-wrapper {
+        padding: 0 40px;
+    }
+}
+
 /*==================================================
 Featured Section Styling Start
 ====================================================*/
