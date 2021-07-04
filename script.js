@@ -35,24 +35,6 @@ $(".my-slider").owlCarousel({
     }
 });
 
-// $('.owl-carousel').owlCarousel({
-//     center: true,
-//     items: 2,
-//     loop: true,
-//     margin: 10,
-//     responsive: {
-//         0: {
-//             items: 1
-//         },
-//         600: {
-//             items: 1
-//         },
-//         1200: {
-//             items: 3
-//         }
-//     }
-// })
-
 $(".category-slider").owlCarousel({
     loop: true,
     center: true,
@@ -85,7 +67,7 @@ $(".category-slider").owlCarousel({
 
 
 function openSlideMenu() {
-    document.getElementById('mobileSideMenu').style.width = '50vw';
+    document.getElementById('mobileSideMenu').style.width = '100vw';
 }
 
 function closeSlideMenu() {
